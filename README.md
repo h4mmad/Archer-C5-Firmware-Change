@@ -1,5 +1,6 @@
 
 ---
+
 ### Current issue
 - The WiFi router provided by ISP ACT is locked, and it's not possible to change the firmware through the GUI management page.
 - To install OpenWRT, physical access to the router is required.
@@ -29,12 +30,12 @@ You can solder header pins onto the board or use jumper cables and attach them u
 
 Use a UART to USB adapter to connect to your laptop.
 
-UART-USB-Adapter
-![UART-USB-Adapter](<images/uart-usb-adapter.jpeg>)
 
 
-UART-Pins
-![[uart-pins.jpeg]]
+![alt text](images/uart-pins.jpeg)
 
+![alt text](images/uart-usb-adapter.jpeg)
 
+![alt text](<images/WhatsApp Image 2025-04-24 at 5.59.30 PM (1).jpeg>)
 
+![alt text](<images/WhatsApp Image 2025-04-24 at 5.59.30 PM.jpeg>)
