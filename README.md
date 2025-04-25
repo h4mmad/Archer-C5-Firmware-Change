@@ -1,6 +1,6 @@
 
 ---
-### Current issue
+### Issue
 - The WiFi router provided by ISP ACT is locked, and it's not possible to change the firmware through the GUI management page.
 - To install OpenWRT, physical access to the router is required.
 - Open up the router casing carefully and locate a group of 4 unlabelled circular pads or pin headers — these are likely UART.
