@@ -32,10 +32,10 @@ You can solder header pins onto the board or use jumper cables and attach them u
 Use a UART to USB adapter to connect to your laptop.
 
 UART-USB-Adapter
-![UART-USB-Adapter](<images/WhatsApp Image 2025-04-24 at 5.59.29 PM (1).jpeg>)
+![UART-USB-Adapter](<images/uart-usb-adapter.jpeg>)
 
 UART-Pins
-![UART-Pins](images/uart-pins.jpg)
+![UART-Pins](<images/uart-pins.jpg>)
 
 
 
