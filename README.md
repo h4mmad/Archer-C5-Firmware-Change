@@ -28,7 +28,10 @@
 
 You can solder header pins onto the board or use jumper cables and attach them using a clip.
 
-Use a UART to USB adapter to connect to your laptop.
+Use a UART to USB adapter to connect to your laptop. 
+
+Note: **The TX of the adapter should connect to RX of the router and the RX of the adapter to TX of the router. GND to GND. (Cross connection).**
+
 
 
 
