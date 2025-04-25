@@ -49,8 +49,10 @@ Use `minicom` , a CLI serial communication tool used to interact with serial por
 Set the baud rate to `-b 115200` and check which port your USB is connected to. In this case it is connected to `/dev/ttyUSB0`.
 
 Use the following command to connect:
+
 `sudo minicom -D /dev/ttyUSB0 -b 115200
 `
+
 ---
 
  Restart the router, you will see the router sending info to the terminal.
@@ -66,7 +68,9 @@ Because autoboot was stopped, it did not load the Linux firmware.
 
 Check for the version of Archer C5 and download it's binary. Visit openWRT and follow the instructions:
 
-![[openWRT.png]]
+
+
+![instructions to download openWRT](images/instructions-openWRT.png)
 
 ---
 ### 4. After installation
@@ -79,6 +83,6 @@ ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.2.1
 
 You should see the following:
 
-![[OpenWRT-CLI.png]]
+![successful login into OpenWRT-CLI](images/OpenWRT-CLI.png)
 
 ---
