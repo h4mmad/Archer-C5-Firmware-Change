@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8f403ed886f85377",
+        "id": "c3bb4cbd3ed38dfc",
         "type": "tabs",
         "children": [
           {
-            "id": "467b4fdff5190ca4",
+            "id": "307b5cca947fe2e9",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "eeaf093054f65c98",
@@ -161,9 +162,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "467b4fdff5190ca4",
+  "active": "307b5cca947fe2e9",
   "lastOpenFiles": [
     "README.md",
+    "images/OpenWRT-CLI.png",
+    "images/instructions-openWRT.png",
+    "images/Screenshot from 2025-04-24 14-56-00.png",
+    "images/openWRT.png",
+    "images/Screenshot from 2025-04-22 14-35-21.png",
     "images/uart-pins.jpeg"
   ]
 }

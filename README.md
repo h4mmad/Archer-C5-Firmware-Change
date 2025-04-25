@@ -1,13 +1,12 @@
 
 ---
-
 ### Current issue
 - The WiFi router provided by ISP ACT is locked, and it's not possible to change the firmware through the GUI management page.
 - To install OpenWRT, physical access to the router is required.
 - Open up the router casing carefully and locate a group of 4 unlabelled circular pads or pin headers — these are likely UART.
 - Use a multimeter to identify the UART pins (GND, TX, RX, VCC).
-
-### Steps to Identify Pins Using a Multimeter
+---
+### 1.  Steps to Identify Pins Using a Multimeter
 1. **Set multimeter to continuity mode** (marked with a diode/beep symbol).
 2. **Identify GND:**
    - Power on the router.
@@ -41,4 +40,45 @@ Note: **The TX of the adapter should connect to RX of the router and the RX of t
 
 ![alt text](<images/WhatsApp Image 2025-04-24 at 5.59.30 PM (1).jpeg>)
 
-![alt text](<images/WhatsApp Image 2025-04-24 at 5.59.30 PM.jpeg>)
+---
+
+### 2. Using the terminal to access the router.
+
+Use `minicom` , a CLI serial communication tool used to interact with serial ports such as UART.
+
+Set the baud rate to `-b 115200` and check which port your USB is connected to. In this case it is connected to `/dev/ttyUSB0`.
+
+Use the following command to connect:
+`sudo minicom -D /dev/ttyUSB0 -b 115200
+`
+---
+
+ Restart the router, you will see the router sending info to the terminal.
+ After the router boots, a login and password prompt appear. If the login and password are know you can proceed. But we need to change the firmware.
+ So,
+ 
+Restart the router, and on boot, repeatedly press the `t` on your keyboard. This will interrupt the U-Boot autoboot countdown, and will prevent the router from loading it's normal firmware. Now you can see the U-Boot command-line shell.
+
+Because autoboot was stopped, it did not load the Linux firmware.
+
+---
+### 3. Installing the OpenWRT binary
+
+Check for the version of Archer C5 and download it's binary. Visit openWRT and follow the instructions:
+
+![[openWRT.png]]
+
+---
+### 4. After installation
+
+If your ssh client is new, it won't support the oldew `ssh-rsa` algorithm because it is disabled by default for security. However the router only offers `ssh-rsa`. So use the following command with the `-oHostKeyAlgorithms=+ssh-rsa` option. Replace the username and IP address if needed.
+
+```bash
+ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.2.1
+```
+
+You should see the following:
+
+![[OpenWRT-CLI.png]]
+
+---
