@@ -31,7 +31,6 @@ Use a UART to USB adapter to connect to your laptop.
 
 Note: **The TX of the adapter should connect to RX of the router and the RX of the adapter to TX of the router. GND to GND. (Cross connection).**
 
-
 <img src="/images/uart-pins.jpeg" width="300">
 
 <img src="/images/uart-usb-adapter.jpeg" width="300">
@@ -66,8 +65,6 @@ Because autoboot was stopped, it did not load the Linux firmware.
 
 Check for the version of Archer C5 and download it's binary. Visit openWRT and follow the instructions:
 
-
-
 ![instructions to download openWRT](images/instructions-openWRT.png)
 
 ---
@@ -76,12 +73,13 @@ Check for the version of Archer C5 and download it's binary. Visit openWRT and f
 If your ssh client is new, it won't support the oldew `ssh-rsa` algorithm because it is disabled by default for security. However the router only offers `ssh-rsa`. So use the following command with the `-oHostKeyAlgorithms=+ssh-rsa` option. Replace the username and IP address if needed.
 
 ```bash
+
 ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.2.1
+
 ```
 
 You should see the following:
 
-<img src="/images/OpenWRT-CLI.png" width="300">
-
+<img src="/images/OpenWRT-CLI.png">
 
 ---
