@@ -32,13 +32,11 @@ Use a UART to USB adapter to connect to your laptop.
 Note: **The TX of the adapter should connect to RX of the router and the RX of the adapter to TX of the router. GND to GND. (Cross connection).**
 
 
+<img src="/images/uart-pins.jpeg" width="300">
 
+<img src="/images/uart-usb-adapter.jpeg" width="300">
 
-![alt text](images/uart-pins.jpeg)
-
-![alt text](images/uart-usb-adapter.jpeg)
-
-![alt text](<images/WhatsApp Image 2025-04-24 at 5.59.30 PM (1).jpeg>)
+<img src="/images/WhatsApp Image 2025-04-24 at 5.59.30 PM (1).jpeg" width="300">
 
 ---
 
@@ -83,6 +81,7 @@ ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.2.1
 
 You should see the following:
 
-![successful login into OpenWRT-CLI](images/OpenWRT-CLI.png)
+<img src="/images/OpenWRT-CLI.png" width="300">
+
 
 ---
